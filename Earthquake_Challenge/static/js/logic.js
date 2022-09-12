@@ -1,4 +1,4 @@
-// Mod 13.2.4
+// Mod 13
 
 // Add console.log to check to see if our code is working.
 console.log("working");
@@ -50,9 +50,9 @@ L.control.layers(baseMaps, overlays).addTo(map);
   
 
 // Retrieve the earthquake GeoJSON data.
-let quakesjson = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
+let quakesJson = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
-d3.json(quakesjson).then(function(data) {
+d3.json(quakesJson).then(function(data) {
 // Creating a GeoJSON layer with the retrieved data.
 L.geoJSON(data, {
     // We turn each feature into a circleMarker on the map.
